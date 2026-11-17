@@ -1,8 +1,7 @@
 <form #formulario="ngForm">
-    Introduce el ID: <input type="number" name="cajaid" #cajaid /><br/>
-    Introduce la localidad: <input type="text" name="cajalocalidad" #cajalocalidad /><br/>
-    Nombre del departamento: <input type="text" name="cajanombre" #cajanombre /><br/>
-    <button (click)="insertarDepartamento()">Crear</button>
-    <button>Borrar</button>
+    Introduce el ID: <input type="number" name="cajaid" #cajaid class="form-control"/><br/>
+    Introduce la localidad: <input type="text" name="cajalocalidad" #cajalocalidad class="form-control"/><br/>
+    Nombre del departamento: <input type="text" name="cajanombre" #cajanombre class="form-control" /><br/>
+    <button (click)="insertarDepartamento()" class="btn btn-success">Crear</button>
 </form>
 <h2 style="color: blue">{{mensaje}}</h2>

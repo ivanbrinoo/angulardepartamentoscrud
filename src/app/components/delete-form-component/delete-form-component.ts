@@ -19,7 +19,7 @@ export class DeleteFormComponent {
   async eliminarDepartamento(): Promise<void> {
     let id = parseInt(this.cajaid.nativeElement.value);
     await this._service.borrarDepartamentos(id);
-    this.mensaje = "Departamento eliminado" + id;
+    this.mensaje = "Departamento eliminado " + id;
     this._cdr.detectChanges();
   }
   
