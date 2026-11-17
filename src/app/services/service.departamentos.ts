@@ -28,4 +28,12 @@ export class DepartamentosService {
             this._http.post(url, departamento, {headers: header})
         )
     }
+
+    async borrarDepartamentos(id: number): Promise<any> {
+        let request = "api/departamentos/" + id;
+        let url = environment.apiejemplos + request;
+        return firstValueFrom(
+            this._http.delete(url)
+        )
+    }
 }
