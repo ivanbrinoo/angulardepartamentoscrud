@@ -1,0 +1,19 @@
+<form #formulario="ngForm">
+    Introduce el ID: <input type="number" name="cajaid" #cajaid /><br/>
+    Introduce la localidad: <input type="text" name="cajalocalidad" #cajalocalidad /><br/>
+    Nombre del departamento: <input type="text" name="cajadepartamento" #cajadepartamento /><br/>
+    
+
+</form>
+
+
+@for(depto of arraydepartamentos; track depto){
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><em>ID: </em> <span style="color: blue;">{{depto.idDepartamento}}</span></li>
+    <li class="list-group-item"><em>Localidad: </em> <span style="color: blue;">{{depto.localidad}}</span></li>
+    <li class="list-group-item"><em>Departamento: </em> <span style="color: blue;">{{depto.nombre}}</span></li>
+  </ul>
+</div>
+<br/>
+}
