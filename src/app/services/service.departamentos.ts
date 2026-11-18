@@ -36,4 +36,14 @@ export class DepartamentosService {
             this._http.delete(url)
         )
     }
+
+    async updateDepartamentos(departamento: Departamento): Promise<any> {
+        let request = "api/departamentos"
+        let url = environment.apiejemplos + request;
+        let header = new HttpHeaders().set("content-type", "application/json")
+        return firstValueFrom(
+            this._http.put(url, departamento, {headers: header})
+        )
+    }
+    
 }

@@ -10,7 +10,9 @@
     <em>Localidad: </em> <span style="color: blue;">{{depto.localidad}}</span></li>
     <li class="list-group-item"><em>Departamento: 
     </em> <span style="color: blue;">{{depto.nombre}}</span></li>
-    <li><a [routerLink]="['/eliminar', depto.idDepartamento]">Delete</a></li>
+    <li class="list-group-item"><a [routerLink]="['/eliminar', depto.idDepartamento]" class="btn btn-danger">Delete</a></li>
+    <li class="list-group-item"><a [routerLink]="['/update', depto.idDepartamento]" class="btn btn-warning">Update</a></li>
+    
   </ul>
 </div>
 <br/>
