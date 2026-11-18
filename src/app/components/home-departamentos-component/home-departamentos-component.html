@@ -4,9 +4,13 @@
 @for(depto of arraydepartamentos; track depto){
 <div class="card" style="width: 18rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item"><em>ID: </em> <span style="color: blue;">{{depto.idDepartamento}}</span></li>
-    <li class="list-group-item"><em>Localidad: </em> <span style="color: blue;">{{depto.localidad}}</span></li>
-    <li class="list-group-item"><em>Departamento: </em> <span style="color: blue;">{{depto.nombre}}</span></li>
+    <li class="list-group-item">
+    <em>ID: </em> <span style="color: blue;">{{depto.idDepartamento}}</span></li>
+    <li class="list-group-item">
+    <em>Localidad: </em> <span style="color: blue;">{{depto.localidad}}</span></li>
+    <li class="list-group-item"><em>Departamento: 
+    </em> <span style="color: blue;">{{depto.nombre}}</span></li>
+    <li><a [routerLink]="['/eliminar', depto.idDepartamento]">Delete</a></li>
   </ul>
 </div>
 <br/>
